@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Nav from "./componets/Nav";
-import About from "./componets/About/";
+import Nav from "./components/Nav";
+import About from "./components/About";
 // import Gallery from "./componets/Gallery";
-import ContactForm from "./componets/Contact";
+import ContactForm from "./components/Contact";
+import Footer from "./components/Footer"
 
 function App() {
   const [categories] = useState([
@@ -40,7 +41,9 @@ function App() {
         ) : (
           <ContactForm></ContactForm>
         )}
+        
       </main>
+      <Footer></Footer>
     </div>
   );
 }
