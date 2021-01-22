@@ -13,6 +13,7 @@ function Nav(props) {
   return (
     // <header className="flex-row px-1">
       <nav className="navbar">
+        <h2>Jeremy Cornwall</h2>
         <ul className="nav-links">
           <li className="mx-2">
             <a

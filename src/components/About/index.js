@@ -8,12 +8,13 @@ function About() {
       <img
         src={coverImage}
         className="my-2"
-        style={{ width: "100%" }}
+        style={{ width: "90%" }}
         alt="cover"
       />
       <div className="my-2">
         <p>
-          I am Jeremy I do things and I like stuff!
+          I am Jeremy I do things and I like stuff! I am a musician by heart
+          Sound engineer by day (and night) and a budding software enginner!
         </p>
       </div>
     </section>
