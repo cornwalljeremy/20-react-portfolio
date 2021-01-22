@@ -9,8 +9,9 @@ main {
   --secondary: #F3A847;
   --tertiary: #B12704;
   --light: #fafafa;
-  --dark: #000000;
+  --dark: #725252;
   --darker: #111111;
+  --header: #07123a;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -92,7 +93,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--header);
 }
 
 header a {

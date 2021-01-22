@@ -8,17 +8,19 @@ function App() {
   const [categories] = useState([
     {
       name: "Portfolio",
-      description:
-        "All my work",
+      description: "All my work",
     },
     { name: "Photos", description: "Some Pictures I have taken" },
     { name: "Resume", description: "What I Have Done" },
-    
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   const [contactSelected, setContactSelected] = useState(false);
+
+  // function Foot() {}
+
+
 
   return (
     <div>
