@@ -11,22 +11,16 @@ function Nav(props) {
   } = props;
 
   return (
-    <header className="flex-row px-1">
-      <h2>
-        <a data-testid="link" href="/">
-          
-          Jeremy Cornwall
-        </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
+    // <header className="flex-row px-1">
+      <nav className="navbar">
+        <ul className="nav-links">
           <li className="mx-2">
             <a
               data-testid="about"
               href="#about"
               onClick={() => setContactSelected(false)}
             >
-              About me
+              About
             </a>
           </li>
           <li className={`mx-2 ${contactSelected && "navActive"}`}>
@@ -52,8 +46,13 @@ function Nav(props) {
             </li>
           ))}
         </ul>
+        <div className="burger">
+          <div className="line-1"></div>
+          <div className="line-2"></div>
+          <div className="line-3"></div>
+        </div>
       </nav>
-    </header>
+      
   );
 }
 
