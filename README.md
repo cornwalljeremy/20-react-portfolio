@@ -27,7 +27,7 @@
 
   gitHub: cornwalljeremy,
 
-  [Jeremy's Webpage](https://cornwalljeremy.github.io/cornwall-portfolio),
+  [Jeremy's Webpage](https://cornwalljeremy.github.io/20-react-portfolio/),
 
   [LinkedIn](https://www.linkedin.com/in/jeremy-cornwall-a9698448/),
 

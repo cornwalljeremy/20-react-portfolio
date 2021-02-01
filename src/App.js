@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Nav from "./components/Nav";
+import About from "./components/About";
+// import Gallery from "./componets/Gallery";
+import ContactForm from "./components/Contact";
+import Footer from "./components/Footer"
+import Portfolio from "./components/Portfolio";
 
 function App() {
+  const [categories] = useState([
+    {
+      name: "Portfolio",
+      description: "All my work",
+    },
+    { name: "Photos", description: "Some Pictures I have taken" },
+    { name: "Resume", description: "What I Have Done" },
+  ]);
+
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
+  const [contactSelected, setContactSelected] = useState(false);
+
+  // function Foot() {}
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav
+        categories={categories}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
+      <main>
+        {!contactSelected ? (
+          <>
+            {/* <Gallery currentCategory={currentCategory}></Gallery> */}
+            <About></About>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        ) : }
+        
+        
+      </main>
+      <Footer></Footer>
     </div>
   );
 }
